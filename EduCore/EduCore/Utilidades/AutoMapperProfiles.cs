@@ -1,0 +1,43 @@
+﻿using AutoMapper;
+using EduCore.DTOs;
+using EduCore.Entidades;
+
+namespace EduCore.Utilidades
+{
+    public class AutoMapperProfiles: Profile
+    {
+        public AutoMapperProfiles()
+        {
+            //APODERADO
+            CreateMap<Apoderado, ApoderadoDTO>()
+                .ForMember(dto => dto.Apellidos,
+                    config => config.MapFrom(autor => MapearNombreYApellidoApoderado(autor)));
+
+            CreateMap<Apoderado, ApoderadoConAlumnoDTO>()
+               .ForMember(dto => dto.Apellidos,
+                   config => config.MapFrom(autor => MapearNombreYApellidoApoderado(autor)));
+
+            CreateMap<ApoderadoCreacionDTO, Apoderado>();
+            CreateMap<Apoderado, ApoderadoPatchDTO>().ReverseMap();
+
+            CreateMap<ApoderadoAlumno, AlumnoDTO>()
+                .ForMember(dto => dto.Id, config => config.MapFrom(ent => ent.AlumnoId))
+                .ForMember(dto => dto.Nombres, config => config.MapFrom(ent => ent.Alumno!.Nombres))
+                .ForMember(dto => dto.Apellidos, config => config.MapFrom(ent => MapearNombreYApellidoAlumno(ent.Alumno!)));
+                
+            //ALUMNO
+            CreateMap<Alumno, AlumnoDTO>();
+            CreateMap<AlumnoCreacionDTO, Alumno>()
+                .ForMember(ent => ent.Apoderados, config =>
+                    config.MapFrom(dto => dto.ApoderadosIds.Select(id => new ApoderadoAlumno { ApoderadoId = id })));
+
+            CreateMap<ApoderadoAlumno, ApoderadoDTO>()
+                .ForMember(dto => dto.Id, config => config.MapFrom(ent => ent.ApoderadoId))
+                .ForMember(dto => dto.Nombres, config => config.MapFrom(ent => ent.Apoderado!.Nombres))
+                .ForMember(dto => dto.Apellidos, config => config.MapFrom(ent => MapearNombreYApellidoAlumno(ent.Alumno!)));
+        }
+
+        private string MapearNombreYApellidoAlumno(Alumno alumno) => $"{alumno.ApellidoPaterno} {alumno.ApellidoMaterno}";
+        private string MapearNombreYApellidoApoderado(Apoderado apoderado) => $"{apoderado.ApellidoPaterno} {apoderado.ApellidoMaterno}";
+    }
+}

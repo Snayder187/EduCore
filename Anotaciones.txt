@@ -1,0 +1,76 @@
+
+
+
+
+Paso 1:
+- Ir al nugget e instalar los nuggets:
+Microsoft.EntityFrameworkCore.SqlServer	9.0.0
+Microsoft.EntityFrameworkCore.Tools	9.0.0
+Swashbuckle.AspNetCore			8.1.2
+AutoMapper				14.0.0
+Microsoft.AspNetCore.Mvc.NewtonsoftJson	9.0.5
+
+Paso 2:
+- Ir al archivo appsettings.Development.json
+- Agregar:
+"ConnectionStrings": {
+  "DefaultConnection": "Server=DESKTOP-6EVQT82; Database=EduCoreDB; Integrated Security=False; User ID=code; Password=123; TrustServerCertificate=True"
+},
+
+Paso 3:
+- Ir al archivo Program.cs
+- Poner los AddControllers en los servicios y la cadena de conexión
+builder.Services.AddControllers();
+
+//Aquí va la cadena de conexión
+builder.Services.AddDbContext<ApplicationDBContext>(opciones => 
+    opciones.UseSqlServer("name=DefaultConnection"));
+
+//Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+//ÁREA DE MIDDLEWARES
+app.MapControllers();
+
+//Swagger
+app.UseSwagger();
+app.UseSwaggerUI();
+
+En launchSettings.json agregar
+-https:
+Abajo del launchBrowser
+"launchUrl": "swagger",
+
+Paso 4:
+- Crear la carpeta Controllers
+- Crear la clase del Controller "AlumnoController.cs"
+
+Paso 5:
+- Crear la carpeta Entidades
+- Crear las entidades de la clase "Alumno"
+
+Paso 6: 
+- Crear la carpeta Datos
+- Crear la clase llamada "ApplicationDBContext.cs"
+
+Paso 7:
+- Una vez completado estos pasos poner en la consola:
+Add-Migration TablaAlumnos
+Update-Database
+
+
+Aprendiendo
+Sección 3
+- Entity Framework Core
+- CRUD
+- Data Relacionada
+Sección 4
+- Inyección de dependencias
+- Servicio
+- Middlewares
+
+
+PENDIENTE
+VIDEO 78 - RELACION DE UNO A MUCHOS
+PUEDE SER PONER COMENTARIOS
