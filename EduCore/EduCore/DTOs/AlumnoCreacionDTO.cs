@@ -16,6 +16,6 @@ namespace EduCore.DTOs
         [Required(ErrorMessage = "El campo {0} es requerido")]
         [StringLength(80, ErrorMessage = "El campo {0} debe tener {1} carácteres o menos")]
         public required string ApellidoMaterno { get; set; }
-        public List<int> ApoderadosIds { get; set; }
+        public List<int> ApoderadosIds { get; set; } = [];
     }
 }

@@ -3,6 +3,8 @@ using Azure;
 using EduCore.Datos;
 using EduCore.DTOs;
 using EduCore.Entidades;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,16 +13,49 @@ namespace EduCore.Controllers
 {
     [ApiController]
     [Route("api/alumnos")]
+    [Authorize(Policy = "esadmin")]
     public class AlumnoController : ControllerBase
     {
         private readonly ApplicationDBContext context;
         private readonly IMapper mapper;
+        private readonly ITimeLimitedDataProtector protectorLimitadoPorTiempo;
 
         //Esto es Inyección de Dependencia
-        public AlumnoController(ApplicationDBContext context, IMapper mapper)
+        public AlumnoController(ApplicationDBContext context, IMapper mapper,
+            IDataProtectionProvider protectionProvider)
         {
             this.context = context;
             this.mapper = mapper;
+            protectorLimitadoPorTiempo = protectionProvider
+                .CreateProtector("AlumnoController").ToTimeLimitedDataProtector();
+        }
+
+        [HttpGet("listado/obtener-token")]
+        public ActionResult ObtenerTokenListado()
+        {
+            var textoPlano = Guid.NewGuid().ToString();
+            var token = protectorLimitadoPorTiempo.Protect(textoPlano, lifetime: TimeSpan.FromSeconds(30));
+            var url = Url.RouteUrl("ObtenerListadoAlumnosUsandoToken", new { token }, "https");
+            return Ok(new { url });
+        }
+
+        [HttpGet("listado/{token}", Name = "ObtenerListadoAlumnosUsandoToken")]
+        [AllowAnonymous]
+        public async Task<ActionResult> ObtenerListadoUsandoToken(string token)
+        {
+            try
+            {
+                protectorLimitadoPorTiempo.Unprotect(token);
+            }
+            catch
+            {
+                ModelState.AddModelError(nameof(token), "El token ha expirado");
+                return ValidationProblem();
+            }
+
+            var alumnos = await context.Alumnos.ToListAsync();
+            var alumnosDTO = mapper.Map<IEnumerable<AlumnoDTO>>(alumnos);
+            return Ok(alumnosDTO);
         }
 
         [HttpGet]

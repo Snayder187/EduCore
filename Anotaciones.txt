@@ -4,11 +4,13 @@
 
 Paso 1:
 - Ir al nugget e instalar los nuggets:
-Microsoft.EntityFrameworkCore.SqlServer	9.0.0
-Microsoft.EntityFrameworkCore.Tools	9.0.0
-Swashbuckle.AspNetCore			8.1.2
-AutoMapper				14.0.0
-Microsoft.AspNetCore.Mvc.NewtonsoftJson	9.0.5
+Microsoft.EntityFrameworkCore.SqlServer			9.0.0
+Microsoft.EntityFrameworkCore.Tools			9.0.0
+Swashbuckle.AspNetCore					8.1.2
+AutoMapper						14.0.0
+Microsoft.AspNetCore.Mvc.NewtonsoftJson			9.0.5
+Microsoft.AspNetCore.Identity.EntityFrameworkCore	9.0.1
+Microsoft.AspNetCore.Authentication.JwtBearer		9.0.1
 
 Paso 2:
 - Ir al archivo appsettings.Development.json
@@ -60,6 +62,13 @@ Add-Migration TablaAlumnos
 Update-Database
 
 
+Para ver usuarios secretos
+Crear un usuario secreto (Click derecho en el proyecto)
+%APPDATA%\Microsoft\UserSecrets << Ponerlo en Ejecutar (Win+R)
+
+Configuración CORS en ASP.NET Core - Video 121
+
+
 Aprendiendo
 Sección 3
 - Entity Framework Core
@@ -69,8 +78,21 @@ Sección 4
 - Inyección de dependencias
 - Servicio
 - Middlewares
-
-
-PENDIENTE
-VIDEO 78 - RELACION DE UNO A MUCHOS
-PUEDE SER PONER COMENTARIOS
+Sección 5
+- Recursos individuales o en colección
+- Entidades dependientes
+- DTOs
+- Relación uno a muchos
+- Relación muchos a muchos
+Sección 6
+- Configuraciones
+- IConfiguration
+- Proveedores de configuración
+- Patrón de opciones
+Sección 7
+- Identity
+- JWT
+- Claims
+- CORS
+- Encriptación
+- Hashing

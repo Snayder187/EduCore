@@ -31,10 +31,26 @@ namespace EduCore.Utilidades
                 .ForMember(ent => ent.Apoderados, config =>
                     config.MapFrom(dto => dto.ApoderadosIds.Select(id => new ApoderadoAlumno { ApoderadoId = id })));
 
+            CreateMap<Alumno, AlumnoConApoderadosDTO>();
             CreateMap<ApoderadoAlumno, ApoderadoDTO>()
                 .ForMember(dto => dto.Id, config => config.MapFrom(ent => ent.ApoderadoId))
                 .ForMember(dto => dto.Nombres, config => config.MapFrom(ent => ent.Apoderado!.Nombres))
-                .ForMember(dto => dto.Apellidos, config => config.MapFrom(ent => MapearNombreYApellidoAlumno(ent.Alumno!)));
+                .ForMember(dto => dto.Apellidos, config => config.MapFrom(ent => MapearNombreYApellidoApoderado(ent.Apoderado!)));
+
+            CreateMap<AlumnoCreacionDTO, ApoderadoAlumno>()
+                .ForMember(ent => ent.Alumno, 
+                    config => config.MapFrom(dto => 
+                        new Alumno { Nombres = dto.Nombres, ApellidoPaterno = dto.ApellidoPaterno, ApellidoMaterno = dto.ApellidoMaterno }));
+
+            //COMENTARIO
+            CreateMap<ComentarioCreacionDTO, Comentario>();
+            CreateMap<ComentarioPatchDTO, Comentario>().ReverseMap();
+            CreateMap<Comentario, ComentarioDTO>()
+                .ForMember(dto => dto.UsuarioEmail, config => config.MapFrom(ent => ent.Usuario!.Email));
+
+
+            //USUARIO
+            CreateMap<Usuario, UsuarioDTO>();
         }
 
         private string MapearNombreYApellidoAlumno(Alumno alumno) => $"{alumno.ApellidoPaterno} {alumno.ApellidoMaterno}";

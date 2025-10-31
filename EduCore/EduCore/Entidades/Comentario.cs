@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace EduCore.Entidades
 {
@@ -8,12 +9,9 @@ namespace EduCore.Entidades
         [Required]
         public required string Cuerpo { get; set; }
         public DateTime FechaPublicacion { get; set; }
-        public bool Activo { get; set; }
-        public string IpAddressRegistro { get; set; }
-        public int UsuarioRegistro { get; set; }
-        public DateTime FechaRegistro { get; set; } = DateTime.UtcNow;
-        public string? IpAddressModifica { get; set; }
-        public int? UsuarioModifica { get; set; }
-        public DateTime? FechaModifica { get; set; }
+        public int ApoderadoId { get; set; }
+        public Apoderado? Apoderado { get; set; }
+        public required string UsuarioId { get; set; }
+        public Usuario? Usuario { get; set; }
     }
 }

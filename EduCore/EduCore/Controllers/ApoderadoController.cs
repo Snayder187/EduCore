@@ -2,6 +2,7 @@
 using EduCore.Datos;
 using EduCore.DTOs;
 using EduCore.Entidades;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +10,7 @@ namespace EduCore.Controllers
 {
     [ApiController]
     [Route("api/apoderado")]
+    [Authorize(Policy = "esadmin")]
     public class ApoderadoController: ControllerBase
     {
         private readonly ApplicationDBContext context;
@@ -21,6 +23,7 @@ namespace EduCore.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IEnumerable<ApoderadoDTO>> Get()
         {
             var apoderados = await context.Apoderados.ToListAsync();
@@ -54,16 +57,6 @@ namespace EduCore.Controllers
             var apoderadoDTO = mapper.Map<ApoderadoDTO>(apoderado);
             return CreatedAtRoute("obtenercurso", new { id = apoderado.Id }, apoderadoDTO);
         }
-
-        //[HttpPut("{id:int}")] // api/alumnos/id
-        //public async Task<ActionResult> Put(int id, ApoderadoCreacionDTO apoderadoCreacionDTO)
-        //{
-        //    var apoderado = mapper.Map<Apoderado>(apoderadoCreacionDTO);
-        //    apoderado.Id = id;
-        //    context.Update(apoderado);
-        //    await context.SaveChangesAsync();
-        //    return NoContent();
-        //}
 
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> Delete(int id)

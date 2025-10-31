@@ -11,5 +11,6 @@ namespace EduCore.DTOs
         public string ApellidoPaterno { get; set; }
         [Required]
         public string ApellidoMaterno { get; set; }
+        public List<AlumnoCreacionDTO> Alumnos { get; set; } = [];
     }
 }
