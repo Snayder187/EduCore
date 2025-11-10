@@ -1,0 +1,26 @@
+﻿namespace EduCore.DTOs
+{
+    public class ApoderadoFiltroDTO
+    {
+        public int Pagina { get; set; } = 1;
+        public int RecordsPorPagina { get; set; } = 10;
+        public PaginacionDTO PaginacionDTO 
+        {
+            get
+            {
+                return new PaginacionDTO(Pagina, RecordsPorPagina);
+            }
+        }
+
+        public string? Nombres { get; set; }
+        public string? ApellidoPaterno { get; set; }
+        public string? ApellidoMaterno { get; set; }
+        //public string? Apellidos { get; set; }
+        public bool? TieneFoto { get; set; }
+        public bool? TieneAlumnos { get; set; }
+        public string? NombreAlumno { get; set; }
+        public bool IncluirAlumnos { get; set; }
+        public string? CampoOrdenar { get; set; }
+        public bool OrdenAscendente { get; set; } = true;
+    }
+}

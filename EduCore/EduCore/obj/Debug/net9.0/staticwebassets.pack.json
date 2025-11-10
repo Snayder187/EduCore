@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\wwwroot\\apoderados\\c6368685-8d3d-49bc-9d7c-727b36801823.jpg",
+      "PackagePath": "staticwebassets\\apoderados\\c6368685-8d3d-49bc-9d7c-727b36801823.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EduCore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EduCore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.EduCore.props",
+      "PackagePath": "build\\EduCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.EduCore.props",
+      "PackagePath": "buildMultiTargeting\\EduCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.EduCore.props",
+      "PackagePath": "buildTransitive\\EduCore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

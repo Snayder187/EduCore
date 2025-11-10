@@ -163,6 +163,7 @@ C:\Users\hecto\Desktop\Sistema Escolar - .Net 9 & WebApi\EduCore\EduCore\EduCore
 C:\Users\hecto\Desktop\Sistema Escolar - .Net 9 & WebApi\EduCore\EduCore\EduCore\obj\Debug\net9.0\ref\EduCore.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\appsettings.json
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\EduCore.staticwebassets.runtime.json
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\EduCore.staticwebassets.endpoints.json
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\EduCore.exe
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\EduCore.deps.json
@@ -172,7 +173,11 @@ C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\AutoMapper.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Azure.Storage.Blobs.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Azure.Storage.Common.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Humanizer.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -217,6 +222,7 @@ C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\System.Drawing.Common.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\System.IO.Hashing.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\System.Memory.Data.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\System.Runtime.Caching.dll
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
@@ -324,5 +330,9 @@ C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\obj\Debug\net9.0\
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\obj\Debug\net9.0\EduCore.pdb
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\obj\Debug\net9.0\EduCore.genruntimeconfig.cache
 C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\obj\Debug\net9.0\ref\EduCore.dll
-C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\System.Linq.Dynamic.Core.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.AspNetCore.OutputCaching.StackExchangeRedis.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\StackExchange.Redis.dll
+C:\Users\hecto\Desktop\Sistema Escolar\EduCore\EduCore\EduCore\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.InMemory.dll

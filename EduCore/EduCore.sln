@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduCore", "EduCore\EduCore.csproj", "{20AE8CEF-3AC2-419A-A88B-6754594F6A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduCoreAPITest", "EduCoreAPITest\EduCoreAPITest.csproj", "{0904A468-9E6E-44DE-9238-28B044E5582F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{20AE8CEF-3AC2-419A-A88B-6754594F6A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20AE8CEF-3AC2-419A-A88B-6754594F6A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20AE8CEF-3AC2-419A-A88B-6754594F6A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0904A468-9E6E-44DE-9238-28B044E5582F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0904A468-9E6E-44DE-9238-28B044E5582F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0904A468-9E6E-44DE-9238-28B044E5582F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0904A468-9E6E-44DE-9238-28B044E5582F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

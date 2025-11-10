@@ -1,4 +1,5 @@
 ﻿using EduCore.Validaciones;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace EduCore.Entidades
@@ -18,6 +19,8 @@ namespace EduCore.Entidades
         [StringLength(80, ErrorMessage = "El campo {0} debe tener {1} carácteres o menos")]
         [PrimeraLetraMayuscula]
         public string ApellidoMaterno { get; set; }
+        [Unicode(false)]
+        public string? Foto { get; set; }
         [Required]
         public List<ApoderadoAlumno> Alumnos { get; set; } = [];
     }

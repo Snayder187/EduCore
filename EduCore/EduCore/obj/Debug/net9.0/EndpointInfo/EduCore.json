@@ -1,49 +1,43 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "EduCore",
-    "version": "1.0"
+    "title": "EduCore API",
+    "description": "Este es un web api para trabajar con datos de apoderados y alumnos",
+    "contact": {
+      "name": "Hector Ramos",
+      "url": "https://www.instagram.com/hector.rs187",
+      "email": "hector.rs187@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/license/mit/"
+    },
+    "version": "v1"
   },
   "paths": {
-    "/api/alumnos/listado/obtener-token": {
+    "/api/v1/alumnos": {
       "get": {
         "tags": [
           "Alumno"
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/alumnos/listado/{token}": {
-      "get": {
-        "tags": [
-          "Alumno"
-        ],
-        "operationId": "ObtenerListadoAlumnosUsandoToken",
+        "operationId": "ObtenerAlumnosV1",
         "parameters": [
           {
-            "name": "token",
-            "in": "path",
-            "required": true,
+            "name": "Pagina",
+            "in": "query",
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "RecordsPorPagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/alumnos": {
-      "get": {
-        "tags": [
-          "Alumno"
         ],
         "responses": {
           "200": {
@@ -81,6 +75,7 @@
         "tags": [
           "Alumno"
         ],
+        "operationId": "CrearAlumnoV1",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -109,15 +104,20 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     },
-    "/api/alumnos/{id}": {
+    "/api/v1/alumnos/{id}": {
       "get": {
         "tags": [
           "Alumno"
         ],
-        "operationId": "ObtenerAlumno",
+        "operationId": "ObtenerAlumnoV1",
         "parameters": [
           {
             "name": "id",
@@ -195,7 +195,12 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       },
       "patch": {
         "tags": [
@@ -252,7 +257,12 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       },
       "delete": {
         "tags": [
@@ -273,13 +283,37 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     },
-    "/api/apoderado": {
+    "/api/v1/apoderado": {
       "get": {
         "tags": [
           "Apoderado"
+        ],
+        "operationId": "ObtenerApoderadosV1",
+        "parameters": [
+          {
+            "name": "Pagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "RecordsPorPagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -317,6 +351,7 @@
         "tags": [
           "Apoderado"
         ],
+        "operationId": "CrearApoderadoV1",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -345,22 +380,31 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     },
-    "/api/apoderado/{id}": {
+    "/api/v1/apoderado/{id}": {
       "get": {
         "tags": [
           "Apoderado"
         ],
-        "operationId": "ObtenerApoderado",
+        "summary": "Obtiene apoderado por Id",
+        "description": "Obtiene un apoderado por su Id. Incluye sus alumnos. Si el apoderado no existe, se retorna 404",
+        "operationId": "ObtenerApoderadoV1",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "El id del apoderado",
             "required": true,
             "schema": {
               "type": "integer",
+              "description": "El id del apoderado",
               "format": "int32"
             }
           }
@@ -385,13 +429,176 @@
                 }
               }
             }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
+      },
+      "put": {
+        "tags": [
+          "Apoderado"
+        ],
+        "operationId": "ActualizarApoderadoV1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "ApellidoMaterno",
+                  "ApellidoPaterno",
+                  "Nombres"
+                ],
+                "type": "object",
+                "properties": {
+                  "Foto": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Nombres": {
+                    "type": "string"
+                  },
+                  "ApellidoPaterno": {
+                    "type": "string"
+                  },
+                  "ApellidoMaterno": {
+                    "type": "string"
+                  },
+                  "Alumnos": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/AlumnoCreacionDTO"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Foto": {
+                  "style": "form"
+                },
+                "Nombres": {
+                  "style": "form"
+                },
+                "ApellidoPaterno": {
+                  "style": "form"
+                },
+                "ApellidoMaterno": {
+                  "style": "form"
+                },
+                "Alumnos": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      },
+      "patch": {
+        "tags": [
+          "Apoderado"
+        ],
+        "operationId": "PatchApoderadoV1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       },
       "delete": {
         "tags": [
           "Apoderado"
         ],
+        "operationId": "BorrarApoderadoV1",
         "parameters": [
           {
             "name": "id",
@@ -407,15 +614,200 @@
           "200": {
             "description": "OK"
           }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/apoderado/filtrar": {
+      "get": {
+        "tags": [
+          "Apoderado"
+        ],
+        "operationId": "FiltrarApoderadosV1",
+        "parameters": [
+          {
+            "name": "Pagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "RecordsPorPagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PaginacionDTO.Pagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PaginacionDTO.RecordsPorPagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Nombres",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApellidoPaterno",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApellidoMaterno",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "TieneFoto",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "TieneAlumnos",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "NombreAlumno",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "IncluirAlumnos",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "CampoOrdenar",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrdenAscendente",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
         }
       }
     },
-    "/api/apoderados-coleccion/{ids}": {
+    "/api/v1/apoderado/con-foto": {
+      "post": {
+        "tags": [
+          "Apoderado"
+        ],
+        "operationId": "CrearApoderadoConFotoV1",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "ApellidoMaterno",
+                  "ApellidoPaterno",
+                  "Nombres"
+                ],
+                "type": "object",
+                "properties": {
+                  "Foto": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Nombres": {
+                    "type": "string"
+                  },
+                  "ApellidoPaterno": {
+                    "type": "string"
+                  },
+                  "ApellidoMaterno": {
+                    "type": "string"
+                  },
+                  "Alumnos": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/AlumnoCreacionDTO"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Foto": {
+                  "style": "form"
+                },
+                "Nombres": {
+                  "style": "form"
+                },
+                "ApellidoPaterno": {
+                  "style": "form"
+                },
+                "ApellidoMaterno": {
+                  "style": "form"
+                },
+                "Alumnos": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/apoderados-coleccion/{ids}": {
       "get": {
         "tags": [
           "ApoderadosColeccion"
         ],
-        "operationId": "ObtenerApoderadosPorIds",
+        "operationId": "ObtenerApoderadosPorIdsV1",
         "parameters": [
           {
             "name": "ids",
@@ -456,14 +848,20 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     },
-    "/api/apoderados-coleccion": {
+    "/api/v1/apoderados-coleccion": {
       "post": {
         "tags": [
           "ApoderadosColeccion"
         ],
+        "operationId": "CrearApoderadosV1",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -504,10 +902,15 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     },
-    "/api/apoderados/{apoderadoId}/comentarios": {
+    "/api/v1/apoderados/{apoderadoId}/comentarios": {
       "get": {
         "tags": [
           "Comentario"
@@ -598,15 +1001,20 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     },
-    "/api/apoderados/{apoderadoId}/comentarios/{id}": {
+    "/api/v1/apoderados/{apoderadoId}/comentarios/{id}": {
       "get": {
         "tags": [
           "Comentario"
         ],
-        "operationId": "ObtenerComentario",
+        "operationId": "ObtenerComentarioV1",
         "parameters": [
           {
             "name": "id",
@@ -713,12 +1121,18 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       },
       "delete": {
         "tags": [
           "Comentario"
         ],
+        "operationId": "BorrarComentarioV1",
         "parameters": [
           {
             "name": "id",
@@ -743,77 +1157,59 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     },
-    "/api/seguridad/hash": {
+    "/api/v1": {
       "get": {
         "tags": [
-          "Seguridad"
+          "Root"
         ],
-        "parameters": [
-          {
-            "name": "textoPlano",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
+        "operationId": "ObtenerRootV1",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DatosHATEOASDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DatosHATEOASDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DatosHATEOASDTO"
+                  }
+                }
+              }
+            }
           }
         }
       }
     },
-    "/api/seguridad/encriptar-limitado-por-tiempo": {
-      "get": {
-        "tags": [
-          "Seguridad"
-        ],
-        "parameters": [
-          {
-            "name": "textoPlano",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/seguridad/desencriptar-limitado-Por-Tiempo": {
-      "get": {
-        "tags": [
-          "Seguridad"
-        ],
-        "parameters": [
-          {
-            "name": "textoCifrado",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/usuarios": {
+    "/api/v1/usuarios": {
       "get": {
         "tags": [
           "Usuarios"
         ],
+        "operationId": "ObtenerUsuariosV1",
         "responses": {
           "200": {
             "description": "OK",
@@ -844,12 +1240,18 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       },
       "put": {
         "tags": [
           "Usuarios"
         ],
+        "operationId": "ActualizarUsuarioV1",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -878,14 +1280,20 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     },
-    "/api/usuarios/registro": {
+    "/api/v1/usuarios/registro": {
       "post": {
         "tags": [
           "Usuarios"
         ],
+        "operationId": "RegistroUsuarioV1",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -934,11 +1342,12 @@
         }
       }
     },
-    "/api/usuarios/login": {
+    "/api/v1/usuarios/login": {
       "post": {
         "tags": [
           "Usuarios"
         ],
+        "operationId": "LoginUsuarioV1",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -987,11 +1396,12 @@
         }
       }
     },
-    "/api/usuarios/renovar-token": {
+    "/api/v1/usuarios/renovar-token": {
       "get": {
         "tags": [
           "Usuarios"
         ],
+        "operationId": "RenovarTokenV1",
         "responses": {
           "200": {
             "description": "OK",
@@ -1013,10 +1423,15 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     },
-    "/api/usuarios/hacer-admin": {
+    "/api/v1/usuarios/hacer-admin": {
       "post": {
         "tags": [
           "Usuarios"
@@ -1052,7 +1467,7 @@
         }
       }
     },
-    "/api/usuarios/remover-admin": {
+    "/api/v1/usuarios/remover-admin": {
       "post": {
         "tags": [
           "Usuarios"
@@ -1085,7 +1500,12 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
       }
     }
   },
@@ -1193,6 +1613,13 @@
         ],
         "type": "object",
         "properties": {
+          "enlaces": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DatosHATEOASDTO"
+            },
+            "nullable": true
+          },
           "id": {
             "type": "integer",
             "format": "int32"
@@ -1202,6 +1629,10 @@
             "nullable": true
           },
           "apellidos": {
+            "type": "string",
+            "nullable": true
+          },
+          "foto": {
             "type": "string",
             "nullable": true
           },
@@ -1252,6 +1683,13 @@
         ],
         "type": "object",
         "properties": {
+          "enlaces": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DatosHATEOASDTO"
+            },
+            "nullable": true
+          },
           "id": {
             "type": "integer",
             "format": "int32"
@@ -1261,6 +1699,10 @@
             "nullable": true
           },
           "apellidos": {
+            "type": "string",
+            "nullable": true
+          },
+          "foto": {
             "type": "string",
             "nullable": true
           }
@@ -1330,6 +1772,24 @@
         },
         "additionalProperties": false
       },
+      "DatosHATEOASDTO": {
+        "type": "object",
+        "properties": {
+          "enlace": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "metodo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "EditarClaimDTO": {
         "required": [
           "email"
@@ -1381,6 +1841,33 @@
         "type": "integer",
         "format": "int32"
       },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
       "RespuestaAutenticacionDTO": {
         "required": [
           "token"
@@ -1414,6 +1901,13 @@
           }
         },
         "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
       }
     }
   }

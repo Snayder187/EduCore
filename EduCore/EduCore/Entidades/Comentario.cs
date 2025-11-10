@@ -12,6 +12,7 @@ namespace EduCore.Entidades
         public int ApoderadoId { get; set; }
         public Apoderado? Apoderado { get; set; }
         public required string UsuarioId { get; set; }
+        public bool EstadoBorrado { get; set; }
         public Usuario? Usuario { get; set; }
     }
 }

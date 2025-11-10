@@ -11,6 +11,15 @@ AutoMapper						14.0.0
 Microsoft.AspNetCore.Mvc.NewtonsoftJson			9.0.5
 Microsoft.AspNetCore.Identity.EntityFrameworkCore	9.0.1
 Microsoft.AspNetCore.Authentication.JwtBearer		9.0.1
+Azure.Storage.Blobs					12.23.0 //Esto es solo para subir imagen a Azure
+System.Linq.Dynamic.Core				1.6.0.1
+Microsoft.Extensions.Caching.StackExchangeRedis		9.0.1
+Microsoft.AspNetCore.OutputCaching.StackExchangeRedis	9.0.1
+Microsoft.EntityFrameworkCore.InMemory			9.0.2 //Pruebas Unitarias
+
+Nuggets para Test
+NSubstitute						5.3.0
+Microsoft.AspNetCore.Mvc.Testing			9.0.2
 
 Paso 2:
 - Ir al archivo appsettings.Development.json
@@ -96,3 +105,17 @@ Sección 7
 - CORS
 - Encriptación
 - Hashing
+Sección 8
+- Swagger
+- Paginación
+- Guardar imágenes
+- Caché
+- Filtros
+- Versionamiento
+- HATEOAS
+Sección 9
+- Pruebas automáticas
+- Pruebas Unitarias
+- Proveedor de memoria
+- Dependencias
+- Pruebas de integración

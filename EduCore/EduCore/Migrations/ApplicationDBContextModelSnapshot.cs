@@ -68,6 +68,10 @@ namespace EduCore.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
+                    b.Property<string>("Foto")
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(max)");
+
                     b.Property<string>("Nombres")
                         .IsRequired()
                         .HasMaxLength(120)
@@ -109,6 +113,9 @@ namespace EduCore.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("EstadoBorrado")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("FechaPublicacion")
                         .HasColumnType("datetime2");
 
@@ -123,6 +130,27 @@ namespace EduCore.Migrations
                     b.HasIndex("UsuarioId");
 
                     b.ToTable("Comentarios");
+                });
+
+            modelBuilder.Entity("EduCore.Entidades.Error", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MensajeDeError")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StrackTrace")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Errores");
                 });
 
             modelBuilder.Entity("EduCore.Entidades.Matricula", b =>

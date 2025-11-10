@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "VPi0JYrUVts64d5ScOQH+dEb0EQLEJOiYOWyvESb6D0=",
+  "Hash": "ogIaCkVfutWcNlh9hDM/RFzchbC78Rz02DLS/w8CK/o=",
   "Source": "EduCore",
   "BasePath": "_content/EduCore",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "EduCore\\wwwroot",
+      "Source": "EduCore",
+      "ContentRoot": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\wwwroot\\",
+      "BasePath": "_content/EduCore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\wwwroot\\apoderados\\c6368685-8d3d-49bc-9d7c-727b36801823.jpg",
+      "SourceId": "EduCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\wwwroot\\",
+      "BasePath": "_content/EduCore",
+      "RelativePath": "apoderados/c6368685-8d3d-49bc-9d7c-727b36801823#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3p85ky9qq6",
+      "Integrity": "udj1HqvrzM7SpOvVDoywXOIRzqiNoE6q6uEMhdGr+J0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\apoderados\\c6368685-8d3d-49bc-9d7c-727b36801823.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "apoderados/c6368685-8d3d-49bc-9d7c-727b36801823.3p85ky9qq6.jpg",
+      "AssetFile": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\wwwroot\\apoderados\\c6368685-8d3d-49bc-9d7c-727b36801823.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"udj1HqvrzM7SpOvVDoywXOIRzqiNoE6q6uEMhdGr+J0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Nov 2025 16:46:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3p85ky9qq6"
+        },
+        {
+          "Name": "label",
+          "Value": "apoderados/c6368685-8d3d-49bc-9d7c-727b36801823.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-udj1HqvrzM7SpOvVDoywXOIRzqiNoE6q6uEMhdGr+J0="
+        }
+      ]
+    },
+    {
+      "Route": "apoderados/c6368685-8d3d-49bc-9d7c-727b36801823.jpg",
+      "AssetFile": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\wwwroot\\apoderados\\c6368685-8d3d-49bc-9d7c-727b36801823.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"udj1HqvrzM7SpOvVDoywXOIRzqiNoE6q6uEMhdGr+J0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Nov 2025 16:46:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-udj1HqvrzM7SpOvVDoywXOIRzqiNoE6q6uEMhdGr+J0="
+        }
+      ]
+    }
+  ]
 }

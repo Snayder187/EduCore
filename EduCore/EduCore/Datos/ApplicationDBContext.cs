@@ -13,6 +13,9 @@ namespace EduCore.Datos
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             base.OnModelCreating(modelbuilder);
+
+            //Para evitar los comentarios que fueron eliminados - Esto es un filtro global
+            modelbuilder.Entity<Comentario>().HasQueryFilter(b => !b.EstadoBorrado); 
         }
 
         //Este será el nombre de la tabla
@@ -21,5 +24,6 @@ namespace EduCore.Datos
         public DbSet<Matricula> Matriculas { get; set; }
         public DbSet<Comentario> Comentarios { get; set; }
         public DbSet<ApoderadoAlumno> ApoderadoAlumnos { get; set; }
+        public DbSet<Error> Errores { get; set; }
     }
 }

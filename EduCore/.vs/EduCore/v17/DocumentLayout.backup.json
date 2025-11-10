@@ -3,40 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\controllers\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\controllers\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educoreapitest\\educoreapitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|solutionrelative:educoreapitest\\educoreapitest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educoreapitest\\pruebasdeintegracion\\controllers\\v1\\alumnoscontrollerpruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|solutionrelative:educoreapitest\\pruebasdeintegracion\\controllers\\v1\\alumnoscontrollerpruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\controllers\\v1\\apoderadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\controllers\\v1\\apoderadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educoreapitest\\pruebasdeintegracion\\controllers\\v1\\apoderadoscontrollerpruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|solutionrelative:educoreapitest\\pruebasdeintegracion\\controllers\\v1\\apoderadoscontrollerpruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educoreapitest\\utilidades\\basepruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|solutionrelative:educoreapitest\\utilidades\\basepruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educoreapitest\\utilidades\\usuariofalsofiltro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|solutionrelative:educoreapitest\\utilidades\\usuariofalsofiltro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educoreapitest\\utilidades\\allowanonymoushandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0904A468-9E6E-44DE-9238-28B044E5582F}|EduCoreAPITest\\EduCoreAPITest.csproj|solutionrelative:educoreapitest\\utilidades\\allowanonymoushandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\servicios\\serviciohash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\servicios\\serviciohash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\dtos\\resultadohashdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\dtos\\resultadohashdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\utilidades\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\utilidades\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|c:\\users\\hecto\\desktop\\sistema escolar\\educore\\educore\\educore\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20AE8CEF-3AC2-419A-A88B-6754594F6A68}|EduCore\\EduCore.csproj|solutionrelative:educore\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,112 +54,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServicioHash.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Servicios\\ServicioHash.cs",
-              "RelativeDocumentMoniker": "EduCore\\Servicios\\ServicioHash.cs",
-              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Servicios\\ServicioHash.cs",
-              "RelativeToolTip": "EduCore\\Servicios\\ServicioHash.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AlumnosControllerPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\PruebasDeIntegracion\\Controllers\\V1\\AlumnosControllerPruebas.cs",
+              "RelativeDocumentMoniker": "EduCoreAPITest\\PruebasDeIntegracion\\Controllers\\V1\\AlumnosControllerPruebas.cs",
+              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\PruebasDeIntegracion\\Controllers\\V1\\AlumnosControllerPruebas.cs",
+              "RelativeToolTip": "EduCoreAPITest\\PruebasDeIntegracion\\Controllers\\V1\\AlumnosControllerPruebas.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T23:26:19.579Z"
+              "WhenOpened": "2025-11-08T09:31:06.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApoderadoController.cs",
+              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Controllers\\V1\\ApoderadoController.cs",
+              "RelativeDocumentMoniker": "EduCore\\Controllers\\V1\\ApoderadoController.cs",
+              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Controllers\\V1\\ApoderadoController.cs",
+              "RelativeToolTip": "EduCore\\Controllers\\V1\\ApoderadoController.cs",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAAALUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T23:29:17.168Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ResultadoHashDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\DTOs\\ResultadoHashDTO.cs",
-              "RelativeDocumentMoniker": "EduCore\\DTOs\\ResultadoHashDTO.cs",
-              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\DTOs\\ResultadoHashDTO.cs",
-              "RelativeToolTip": "EduCore\\DTOs\\ResultadoHashDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Title": "ApoderadosControllerPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\PruebasDeIntegracion\\Controllers\\V1\\ApoderadosControllerPruebas.cs",
+              "RelativeDocumentMoniker": "EduCoreAPITest\\PruebasDeIntegracion\\Controllers\\V1\\ApoderadosControllerPruebas.cs",
+              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\PruebasDeIntegracion\\Controllers\\V1\\ApoderadosControllerPruebas.cs",
+              "RelativeToolTip": "EduCoreAPITest\\PruebasDeIntegracion\\Controllers\\V1\\ApoderadosControllerPruebas.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAqwHEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T23:25:48.046Z"
+              "WhenOpened": "2025-11-07T21:45:27.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioFalsoFiltro.cs",
+              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\Utilidades\\UsuarioFalsoFiltro.cs",
+              "RelativeDocumentMoniker": "EduCoreAPITest\\Utilidades\\UsuarioFalsoFiltro.cs",
+              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\Utilidades\\UsuarioFalsoFiltro.cs",
+              "RelativeToolTip": "EduCoreAPITest\\Utilidades\\UsuarioFalsoFiltro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T21:40:31.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EduCoreAPITest.csproj",
+              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\EduCoreAPITest.csproj",
+              "RelativeDocumentMoniker": "EduCoreAPITest\\EduCoreAPITest.csproj",
+              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\EduCoreAPITest.csproj",
+              "RelativeToolTip": "EduCoreAPITest\\EduCoreAPITest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-07T21:27:48.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AllowAnonymousHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\Utilidades\\AllowAnonymousHandler.cs",
+              "RelativeDocumentMoniker": "EduCoreAPITest\\Utilidades\\AllowAnonymousHandler.cs",
+              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\Utilidades\\AllowAnonymousHandler.cs",
+              "RelativeToolTip": "EduCoreAPITest\\Utilidades\\AllowAnonymousHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T21:38:20.206Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AlumnoController.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Controllers\\AlumnoController.cs",
-              "RelativeDocumentMoniker": "EduCore\\Controllers\\AlumnoController.cs",
-              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Controllers\\AlumnoController.cs",
-              "RelativeToolTip": "EduCore\\Controllers\\AlumnoController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCAAAAASAAAAAAAAAA==",
+              "Title": "BasePruebas.cs",
+              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\Utilidades\\BasePruebas.cs",
+              "RelativeDocumentMoniker": "EduCoreAPITest\\Utilidades\\BasePruebas.cs",
+              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCoreAPITest\\Utilidades\\BasePruebas.cs",
+              "RelativeToolTip": "EduCoreAPITest\\Utilidades\\BasePruebas.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAqwEYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T22:11:20.105Z"
+              "WhenOpened": "2025-11-07T21:29:53.856Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Program.cs",
               "RelativeDocumentMoniker": "EduCore\\Program.cs",
               "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Program.cs",
               "RelativeToolTip": "EduCore\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAAAM8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T21:30:48.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SeguridadController.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Controllers\\SeguridadController.cs",
-              "RelativeDocumentMoniker": "EduCore\\Controllers\\SeguridadController.cs",
-              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Controllers\\SeguridadController.cs",
-              "RelativeToolTip": "EduCore\\Controllers\\SeguridadController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAmwB0AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T22:36:50.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "EduCore\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\appsettings.Development.json",
-              "RelativeToolTip": "EduCore\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-30T22:12:38.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AutoMapperProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Utilidades\\AutoMapperProfiles.cs",
-              "RelativeDocumentMoniker": "EduCore\\Utilidades\\AutoMapperProfiles.cs",
-              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Utilidades\\AutoMapperProfiles.cs",
-              "RelativeToolTip": "EduCore\\Utilidades\\AutoMapperProfiles.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwC8AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T08:14:40.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "EduCore\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "EduCore\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwC0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T08:12:12.999Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\DTOs\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "EduCore\\DTOs\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\hecto\\Desktop\\Sistema Escolar\\EduCore\\EduCore\\EduCore\\DTOs\\UsuarioDTO.cs",
-              "RelativeToolTip": "EduCore\\DTOs\\UsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T08:11:41.993Z"
+              "WhenOpened": "2025-11-07T21:28:05.208Z"
             }
           ]
         }

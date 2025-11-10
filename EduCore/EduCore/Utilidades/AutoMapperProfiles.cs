@@ -18,6 +18,8 @@ namespace EduCore.Utilidades
                    config => config.MapFrom(autor => MapearNombreYApellidoApoderado(autor)));
 
             CreateMap<ApoderadoCreacionDTO, Apoderado>();
+            CreateMap<ApoderadoCreacionDTOConFoto, Apoderado>()
+                .ForMember(ent => ent.Foto, config => config.Ignore());
             CreateMap<Apoderado, ApoderadoPatchDTO>().ReverseMap();
 
             CreateMap<ApoderadoAlumno, AlumnoDTO>()
